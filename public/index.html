@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="C:\Users\rmune\NewFolder\reactfirst\public/fevicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="C:\Users\rmune\NewFolder\reactfirst\public/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="C:\Users\rmune\NewFolder\reactfirst\public/manifest.json" />
+    <!--
+      Notice the use of C:\Users\rmune\NewFolder\reactfirst\public in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "C:\Users\rmune\NewFolder\reactfirst\public/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="C:\Users\rmune\NewFolder\reactfirst\src\index.css">
+    <title>SortVisualizer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="header">
+      <div class="overlay">
+        <h2>Sorting Visualizer</h2>
+        <a href="#"><img href=""></a>
+      </div>
+    </div>
+    <input type="checkbox" class="toggle-sidebar" id="toggle-sidebar">
+    <label for="toggle-sidebar" class="toggle-icon">
+      <div class="bar-top"></div>
+      <div class="bar-middle"></div>
+      <div class="bar-bottom"></div>
+    </label>
+    <div class="sidebar">
+      <ul class="menu" id="input">
+        <li>
+          <h5>Array size</h5>
+          <input id="array-size" type="range" min="5" max="100" step="1" value="50">
+        </li>
+        <li>
+          <h5>Speed</h5>
+          <input id="speed" type="range" min="20" max="400" stepdown="10" value="50">
+        </li>
+        <li>
+          <h5>Algorithm</h5>
+          <div class="container">
+            <div class="option-container">
+              <div class="options">
+                <input type="radio" class="radio" id="bubbleSort" name="Category">
+                <label for="bubbleSort">Bubble Sort</label>
+              </div>
+              <div class="options">
+                <input type="radio" class="radio" id="selectionSort" name="Category">
+                <label for="selectionSort">Selection Sort</label>
+              </div>
+              <div class="options">
+                <input type="radio" class="radio" id="insertionSort" name="Category">
+                <label for="insertionSort">Insertion Sort</label>
+              </div>
+              <div class="options">
+                <input type="radio" class="radio" id="mergeSort" name="Category">
+                <label for="mergeSort">Merge Sort</label>
+              </div>
+              <div class="options">
+                <input type="radio" class="radio" id="quickSort" name="Category">
+                <label for="quickSort">Quick Sort</label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h5>Reset</h5>
+          <button type="reset" class="reset" name="resetButton">Reset</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
